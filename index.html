@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes Jeux</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .game-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #000;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    .game-card .title {
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 Mes Jeux</h1>
+
+  <div class="games">
+    <a class="game-card" href="https://charlelie-puissance4.netlify.app" target="_blank">
+      <img src="https://via.placeholder.com/400x200?text=Puissance+4" alt="Puissance 4" />
+      <div class="title">Puissance 4</div>
+    </a>
+
+    <a class="game-card" href="https://charlelie-brain.netlify.app" target="_blank">
+      <img src="https://via.placeholder.com/400x200?text=Brain+Game" alt="Brain Game" />
+      <div class="title">Brain Game</div>
+    </a>
+
+    <a class="game-card" href="https://charlelie-solitaire.netlify.app" target="_blank">
+      <img src="https://via.placeholder.com/400x200?text=Solitaire" alt="Solitaire" />
+      <div class="title">Solitaire</div>
+    </a>
+  </div>
+</body>
+</html>
